@@ -55,9 +55,11 @@ const someConstant = new SomeClass(someValue);
 
 Sample Language: <a style="color:#ff0049">Javascript</a>
 ```js
-//# @Name: SomeClass
-//# @Example: new SomeClass(someValue)
-//# additional description information
+/*#
+  @Name: someConstant
+  @Example: new SomeClass(someValue)
+  additional description information
+ */
 class SomeClass {
     constructor(value) {
         this.value = value;
@@ -72,9 +74,11 @@ class SomeClass {
 
 Sample Language: <a style="color:#ff0049">Javascript</a>
 ```js
-//# @Name: someConstant
-//# @Type: SomeClass
-//# Some additional description information
+/*#
+  @Name: someConstant
+  @Type: SomeClass
+  Some additional description information
+ */
 const someConstant = new SomeClass(someValue);
 ```
 #### Component Breakdown:
