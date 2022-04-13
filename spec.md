@@ -1,7 +1,7 @@
 # Syntax Specification
 - [Tags](#tags)
-- [Basic Usage](#basic usage)
-- [Multiline Comments](#multiline comments)
+- [Basic Usage](#basic-usage)
+- [Multiline Comments](#multiline-comments)
 
 
 ## Tags
