@@ -2,6 +2,12 @@
 
 A language agnostic code documentation utility.
 
+## Documentation
+For detailed documentation, please see the [specifications](./spec.md).
+
+### Supported Languages
+Please see the [support](/support.md) table
+
 ### Whats it about?
 
 Wharf is a code documentation utility which aims to provide best-in-class documentation across as many languages as

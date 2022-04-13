@@ -1,8 +1,10 @@
 use std::path::Path;
 
+mod processors;
 mod fs;
 
 mod language;
+mod structures;
 
 fn main() {
     let root = std::env::current_dir().unwrap().to_string_lossy().to_string();

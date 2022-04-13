@@ -1,19 +1,18 @@
-pub fn determine_language(path: &String) -> String {
-    let ext = extract_extension(path);
-    return match ext.as_str() {
-        "rs" => "rust".to_string(),
-        "toml" => "toml".to_string(),
-        _ => {
-            "Unknown".to_string()
-        }
-    }
-}
+use crate::structures::langs::Supported;
 
-fn extract_extension(path: &String) -> String {
+pub fn determine_language(path: &String) -> Supported {
     let mut dots: Vec<&str> = path.split(".").collect();
     if dots.len() > 0 {
-        dots.pop().unwrap().to_string()
+        match dots.pop().unwrap().to_lowercase().as_str() {
+            "rs"  => Supported::RUST,
+            "js"  => Supported::JAVASCRIPT,
+            "ts"  => Supported::TYPESCRIPT,
+            "py"  => Supported::PYTHON,
+            "bat" => Supported::BATCH,
+            "bas" => Supported::BASIC,
+            _     => Supported::UNKNOWN
+        }
     } else {
-        "Unknown".to_string()
+        Supported::UNKNOWN
     }
 }
